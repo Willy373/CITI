@@ -1,0 +1,175 @@
+﻿@model CITI_Oruro.Models.DetalleInscripcion
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ImprimirVenta</title>
+    <style>
+        h1 {
+            text-align: center
+        }
+        .contenedor {
+            
+        }
+
+        .imagen{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        p.title {
+            font-weight: bold;
+        }
+
+        p.title2 {
+            font-weight: bold;
+            color: #03A99F;
+            font-size: 20px;
+        }
+
+        p.text {
+            font-size: 15px;
+            font-weight: 100;
+            color: #858585;
+        }
+
+        p {
+            margin: 0px
+        }
+
+        .tbth {
+            text-align: left;
+        }
+
+        table.tbproductos {
+            border-collapse: separate;
+            border-spacing: 4px;
+        }
+
+            table.tbproductos thead tr th {
+                background-color: #03A99F;
+                
+                font-size: 15px;
+                color: white;
+            }
+
+            table.tbproductos tbody tr td {
+                
+            }
+
+        .item {
+            font-size: 15px;
+            font-weight: 100;
+            color: #757575;
+        }
+
+        .item-2 {
+            font-size: 15px;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .item-3 {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #03A99F;
+            color: white;
+        }
+
+        .td-item {
+            border-bottom: 2px solid #E8E8E8 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="imagen" src="~/imagenes/siboruro.jpg" style="width: 80px;" />
+                </td>
+            </tr>
+            <tr><td align="center"><p class="title">COLEGIO DE INGENIEROS EN TECNOLOGIAS DE LA INFORMACIÓN  ORURO</p></td></tr>
+            <tr><td align="center">Página web: citior.org.bo</td></tr>
+            <tr><td align="center">Correo: finanzas@citior.org.bo </td></tr>
+        </table>
+
+        
+        <h1>RECIBO OFICIAL # @Model.IdDetalleInscripcion </h1>       
+       
+        <br />
+        
+        <p><b>RNI:</b> @Model.IdIngenieroNavigation.Rni</p>
+        <p><b>NOMBRE:</b> @Model.IdIngenieroNavigation.NombreCompleto</p>
+        <p><b>ESPECIALIDAD:</b> @Model.IdIngenieroNavigation.Especialidad</p>
+
+        <hr />
+
+        <tr>
+            <td><p class="text">Por Concepto de Inscripción: @Model.IdInscripcionNavigation.Tipo</p></td>
+        </tr>
+        <table class="tbproductos" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="tbth">Nro.</th>
+                    <th class="tbth">DETALLE</th>
+                    <th class="tbth">MONTO</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    <tr>
+                        <td class="td-item"><p class="item">1</p></td>
+                        <td class="td-item"><p class="item">@Model.IdInscripcionNavigation.Tipo</p></td>
+                        <td class="td-item"><p align ="right" class="item">@Model.Total</p></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <table style="width:100%">
+            <tr>
+                <td align="right"><p>Sub Total Bs:</td>
+                <td align="right"><p class="title">@Model.Total</td>
+            </tr>
+            <tr>
+                <td align="right">Descuento Bs:</td>
+                <td align="right"><p class="title">0</td>
+            </tr>
+            <tr>
+                <td align="right">Total Bs:</td>
+                <td align="right"><p class="title">@Model.Total</td>
+            </tr>
+        </table>
+
+        <hr />
+        <p>Son: @Model.IdUsuarioNavigation.Password CON 00/100 BOLIVIANOS</p>
+        <hr />
+        <br />
+        <p align="center"><b>¡Gracias por tu aporte! </b>Estamos trabajando para brindar a todos los colegiados diferentes beneficios</p>
+        <br />
+
+    </div>
+    <div class="text-center">
+        <img class="imagen" src=" data:image /png;base64,khkhkkh" height="130" width="130" />
+        <p style=" text-align:center" class="text">Escanee para verificar su pago</p></>
+    </div>
+    <br />
+    <p class="text">Usuario: @Model.IdUsuarioNavigation.Cuenta</p></>
+
+    <p class="text">Fecha: @Model.Fecha</p>
+
+</body>
+</html>
+

@@ -49,9 +49,7 @@
                 @Html.DisplayFor(modelItem => item.IdIngenieroNavigation.NombreCompleto)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCuota">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCuota">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCuota">Delete</a>
+                <a asp-action="ImprimirCuota" class="btn btn-success" asp-route-id="@item.IdCuota">Recibo</a>
             </td>
         </tr>
 }

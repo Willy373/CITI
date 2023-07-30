@@ -20,20 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReciboCuota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xSZWNpYm9DdW90YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Create.cshtml]
@@ -44,24 +36,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/ReciboInscripcion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xSZWNpYm9JbnNjcmlwY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Create.cshtml]

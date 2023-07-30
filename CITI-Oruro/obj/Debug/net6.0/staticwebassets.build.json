@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CC6JGNA5mI5z2lKovgD7o7cUGtwKF68jxoeIArS1kjA=",
+  "Hash": "U90aGhw02/BwW3e7agyEBOD0lBf2tzU4/nnVjH/B46w=",
   "Source": "CITI-Oruro",
   "BasePath": "_content/CITI-Oruro",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\imagenes\\siboruro.jpg",
+      "SourceId": "CITI-Oruro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\",
+      "BasePath": "_content/CITI-Oruro",
+      "RelativePath": "imagenes/siboruro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\siboruro.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\js\\site.js",
