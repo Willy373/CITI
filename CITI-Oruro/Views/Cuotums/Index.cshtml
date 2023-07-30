@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CITI_Oruro.Models.Cuotum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Registrar Cuota Mensual</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-dark">Create Nueva Cuota Mensual</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MesesTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Detalle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdIngenieroNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MesesTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Detalle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdIngenieroNavigation.NombreCompleto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCuota">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCuota">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCuota">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

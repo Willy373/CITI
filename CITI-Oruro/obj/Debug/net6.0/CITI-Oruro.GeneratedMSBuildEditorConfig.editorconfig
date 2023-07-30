@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

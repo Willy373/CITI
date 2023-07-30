@@ -7,13 +7,13 @@ public partial class Cuotum
 {
     public int IdCuota { get; set; }
 
-    public string Detalle { get; set; } = null!;
+    public string? Detalle { get; set; } = null!;
 
     public DateTime Fecha { get; set; }
 
     public int MesesTotal { get; set; }
 
-    public int Total { get; set; }
+    public int? Total { get; set; }
 
     public int IdUsuario { get; set; }
 
