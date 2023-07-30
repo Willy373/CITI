@@ -19,12 +19,26 @@ namespace CITI_Oruro.Controllers
         }
 
         // GET: Ingenieroes
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //      return _context.Ingenieros != null ? 
+        //                  View(await _context.Ingenieros.ToListAsync()) :
+        //                  Problem("Entity set 'CitiContext.Ingenieros'  is null.");
+        //}
+        //POST: Ingenieros 
+        public async Task<IActionResult> Index(string buscar)
         {
-              return _context.Ingenieros != null ? 
-                          View(await _context.Ingenieros.ToListAsync()) :
-                          Problem("Entity set 'CitiContext.Ingenieros'  is null.");
+            var ingenieros = from ingeniero in _context.Ingenieros
+                           select ingeniero;
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                ingenieros = ingenieros.Where(x => x.NombreCompleto.Contains(buscar));
+            }
+
+            return View(await ingenieros.ToListAsync());
         }
+
+
 
         // GET: Ingenieroes/Details/5
         public async Task<IActionResult> Details(int? id)
