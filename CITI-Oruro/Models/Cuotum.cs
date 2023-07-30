@@ -21,7 +21,7 @@ public partial class Cuotum
 
     public virtual ICollection<DetalleCuotum> DetalleCuota { get; set; } = new List<DetalleCuotum>();
 
-    public virtual Ingeniero IdIngenieroNavigation { get; set; } = null!;
+    public virtual Ingeniero? IdIngenieroNavigation { get; set; } = null!;
 
-    public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual Usuario? IdUsuarioNavigation { get; set; } = null!;
 }

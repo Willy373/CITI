@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CITI_Oruro.Models.DetalleInscripcion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Registrar Incripción</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-dark">Crear Nueva Inscripción</a>
+</p>
+
+<form asp-controller="DetalleInscripcions" asp-action="Index" method="get">
+    <p>
+        Buscar: <input type="text" name="buscar" class="form-text" />
+        <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+    </p>
+
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdIngenieroNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdInscripcionNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdIngenieroNavigation.NombreCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdInscripcionNavigation.Tipo)
+            </td>
+            <td>
+                    <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.IdDetalleInscripcion">Edit</a> |
+                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.IdDetalleInscripcion">Details</a> |
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.IdDetalleInscripcion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

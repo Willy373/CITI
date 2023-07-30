@@ -17,9 +17,9 @@ public partial class DetalleInscripcion
 
     public int IdInscripcion { get; set; }
 
-    public virtual Ingeniero IdIngenieroNavigation { get; set; } = null!;
+    public virtual Ingeniero? IdIngenieroNavigation { get; set; } = null!;
 
-    public virtual Inscripcion IdInscripcionNavigation { get; set; } = null!;
+    public virtual Inscripcion? IdInscripcionNavigation { get; set; } = null!;
 
-    public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual Usuario? IdUsuarioNavigation { get; set; } = null!;
 }
