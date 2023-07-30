@@ -92,13 +92,26 @@ namespace CITI_Oruro.Controllers
             String[] mes = { "ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE" };
             int numMes = 0;
             int anio = 2022;
-            mesActual.Add(mes[9] + " - " + anio);
-            mesActual.Add(mes[10] + " - " + anio);
-            mesActual.Add(mes[11] + " - " + anio);
+            int mes2022 = 9;
+            while(numMes < numero)
+            {
+                if (numMes <= 2)
+                {
+                    mesActual.Add(mes[mes2022] + " - " + anio);
+                    mes2022++;
+                    numMes++;
+                }
+                else
+                {
+                    numMes++;
+                }
+            }
+            numMes = 0;
             numero = numero - 3;
             anio = anio + 1;
             for (int i = 0; i < numero; i++)
             {
+
                 if (numMes != 12)
                 {
                     mesActual.Add(mes[numMes] + " - " + anio);
@@ -136,7 +149,7 @@ namespace CITI_Oruro.Controllers
             if (num < 2000) return " mil " + Literal(num % 1000);
             if (num < 10000) return lit_unidades[(num / 1000) + 1] + " mil " + Literal(num % 1000);
             else
-                return "\n\tIngresar valores menores a 10000\n";
+                return "";
         }
 
 
@@ -167,33 +180,100 @@ namespace CITI_Oruro.Controllers
                 String numLetras = Literal(num);
                 cuota.IdUsuarioNavigation.Password = numLetras.ToUpper();
 
-
-
-            //String txtQRCode = detalle.IdIngenieroNavigation.NombreCompleto.ToString() + " pago de: " + detalle.IdInscripcionNavigation.Tipo
-            //   + ", con un monto de:" + detalle.Total;
-
-            //QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            //QRCodeData qrCodeData = qrGenerator.CreateQrCode(txtQRCode, QRCodeGenerator.ECCLevel.Q);
-            //QRCode qrCode = new QRCode(qrCodeData);
-            //Bitmap qrcodeImage = qrCode.GetGraphic(20);
-
-            //ImageConverter converter = new ImageConverter();
-            //byte[] QrByte = (byte[])converter.ConvertTo(qrcodeImage, typeof(byte[]));
-            //string model = Convert.ToBase64String(QrByte);
-
-
-            //QRCodeGenerator qrGenerator = new QRCodeGenerator();
-            //QRCodeData qrCodeData = qrGenerator.CreateQrCode(txtQRCode, QRCodeGenerator.ECCLevel.Q);
-            //PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
-            //byte[] qrCodeImage = qrCode.GetGraphic(20);
-            //string model = Convert.ToBase64String(qrCodeImage);
-
-
             return new ViewAsPdf("ReciboCuota", cuota)
             {
                 FileName = $"Recibo {Id}.pdf",
                 PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
                 PageSize = Rotativa.AspNetCore.Options.Size.A5
+            };
+        }
+
+        public IActionResult VerQR(int? Id)
+        {
+            //TODO ESTO LO REEMPLAZAS CON TU PROPIA LÓGICA HACIA TU BASE DE DATOS
+            Cuotum cuotum = _context.Cuota.Include(dv => dv.IdIngenieroNavigation).Include(dv => dv.IdUsuarioNavigation).FirstOrDefault(dv => dv.IdCuota == Id);
+            //return View();
+
+
+            String txtQRCode = "RNI: " + cuotum.IdIngenieroNavigation.Rni + ", Nombre: " + cuotum.IdIngenieroNavigation.NombreCompleto.ToString() + " pago de: Cuota de " + cuotum.MesesTotal.ToString()
+                + " meses, con un monto de: " + cuotum.Total;
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(txtQRCode, QRCodeGenerator.ECCLevel.Q);
+            PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
+            byte[] qrCodeImage = qrCode.GetGraphic(20);
+            string model = Convert.ToBase64String(qrCodeImage);
+            return View("VerQr", model);
+        }
+
+
+
+
+        public List<Ingeniero> IngenierosAlDia()
+        {
+            var ingenieros = _context.Ingenieros.ToList();
+            List<Ingeniero> ingDia = new List<Ingeniero>();
+            foreach (var item in ingenieros)
+            {
+                var recibo = _context.Cuota.Include(dv => dv.IdIngenieroNavigation).Where(dv => dv.IdIngeniero == item.IdIngeniero);
+                int cuota = 0;
+                foreach (var itemCuota in recibo)
+                {
+                    cuota = cuota + itemCuota.MesesTotal;
+                }
+                int mesActual = DateTime.Now.Month + 3;
+                if (cuota >= mesActual)
+                    ingDia.Add(item);
+            }
+            return ingDia;
+        }
+        public List<Ingeniero> IngenierosDeudores()
+        {
+            var ingenieros = _context.Ingenieros.ToList();
+            List<Ingeniero> ingDeudor = new List<Ingeniero>();
+            foreach (var item in ingenieros)
+            {
+                var recibo = _context.Cuota.Include(dv => dv.IdIngenieroNavigation).Where(dv => dv.IdIngeniero == item.IdIngeniero);
+                int cuota = 0;
+                foreach (var itemCuota in recibo)
+                {
+                    cuota = cuota + itemCuota.MesesTotal;
+                }
+                if (cuota < 6)
+                    ingDeudor.Add(item);
+            }
+            return ingDeudor;
+        }
+
+        public IActionResult Reportes()
+        {
+            return View();
+        }
+
+        public IActionResult ReporteDeudores()
+        {
+
+            List<Ingeniero> Ingeniero = new List<Ingeniero>();
+            Ingeniero = IngenierosDeudores();
+
+            return new ViewAsPdf("ReporteDeudores", Ingeniero)
+            {
+                FileName = $"Deudores {1}.pdf",
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+                PageSize = Rotativa.AspNetCore.Options.Size.Letter
+            };
+        }
+
+        public IActionResult ReporteAlDia()
+        {
+            List<Ingeniero> Ingeniero = new List<Ingeniero>();
+            Ingeniero = IngenierosAlDia();
+
+            return new ViewAsPdf("ReporteAlDia", Ingeniero)
+            {
+                FileName = $"AlDia {1}.pdf",
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+                PageSize = Rotativa.AspNetCore.Options.Size.Letter
             };
         }
     }

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\imagenes\\SIB.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\SIB.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\imagenes\\siboruro.jpg",
       "PackagePath": "staticwebassets\\imagenes\\siboruro.jpg"
     },

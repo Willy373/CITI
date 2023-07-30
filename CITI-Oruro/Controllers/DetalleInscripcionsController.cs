@@ -10,6 +10,8 @@ using Microsoft.Win32;
 using Rotativa.AspNetCore;
 using QRCoder;
 using System.Drawing;
+using Microsoft.IdentityModel.Tokens;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CITI_Oruro.Controllers
 {
@@ -60,16 +62,22 @@ namespace CITI_Oruro.Controllers
         {
             if (ModelState.IsValid)
             {
-                
-                if (detalleInscripcion.IdInscripcion == 1)
-                    detalleInscripcion.Total = 50;
-                else
-                    detalleInscripcion.Total = 200;
-                detalleInscripcion.IdUsuarioNavigation = _context.Usuarios.Find(1);
+                var ingeniero = _context.DetalleInscripcions.Where(x => x.IdIngeniero == detalleInscripcion.IdIngeniero && x.Fecha.Year == DateTime.Now.Year);
+                if (ingeniero.IsNullOrEmpty()) {
+                    if (detalleInscripcion.IdInscripcion == 1)
+                        detalleInscripcion.Total = 50;
+                    else
+                        detalleInscripcion.Total = 200;
+                    detalleInscripcion.IdUsuarioNavigation = _context.Usuarios.Find(1);
 
-                _context.Add(detalleInscripcion);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                    _context.Add(detalleInscripcion);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewData["ValidateMessage"] = "Usuario Ya Registrado";
+                }
             }
             ViewData["IdIngeniero"] = new SelectList(_context.Ingenieros, "IdIngeniero", "NombreCompleto", detalleInscripcion.IdIngeniero);
             ViewData["IdInscripcion"] = new SelectList(_context.Inscripcions, "IdInscripcion", "Tipo", detalleInscripcion.IdInscripcion);
@@ -147,8 +155,6 @@ namespace CITI_Oruro.Controllers
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(txtQRCode, QRCodeGenerator.ECCLevel.Q);
             PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
             byte[] qrCodeImage = qrCode.GetGraphic(20);
-            string model = Convert.ToBase64String(qrCodeImage);
-
 
             if(detalle.IdInscripcionNavigation.Tipo == "REAFILIACION")
                 detalle.IdUsuarioNavigation.Password = "CINCUENTA";
@@ -162,5 +168,25 @@ namespace CITI_Oruro.Controllers
                 PageSize = Rotativa.AspNetCore.Options.Size.A5
             };
         }
+
+        public IActionResult VerQR(int? Id)
+        {
+            //TODO ESTO LO REEMPLAZAS CON TU PROPIA LÓGICA HACIA TU BASE DE DATOS
+            DetalleInscripcion detalle = _context.DetalleInscripcions.Include(dv => dv.IdUsuarioNavigation).Include(dv => dv.IdIngenieroNavigation).Include(dv => dv.IdInscripcionNavigation).FirstOrDefault(dv => dv.IdDetalleInscripcion == Id);
+            //return View();
+
+
+            String txtQRCode = "RNI: " + detalle.IdIngenieroNavigation.Rni + ", Nombre: " + detalle.IdIngenieroNavigation.NombreCompleto.ToString() + " pago de: " + detalle.IdInscripcionNavigation.Tipo
+                + ", con un monto de: " + detalle.Total;
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(txtQRCode, QRCodeGenerator.ECCLevel.Q);
+            PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
+            byte[] qrCodeImage = qrCode.GetGraphic(20);
+            string model = Convert.ToBase64String(qrCodeImage);
+            return View("VerQr", model);
+        }
+
+        
     }
 }

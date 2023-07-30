@@ -1,0 +1,15 @@
+﻿﻿
+@{
+    @model string
+
+    ViewData["Title"] = "VerQR";
+}
+
+<div class="text-center">
+    <h1 class="display-4">VER QR DE CUOTAS</h1>
+    <img alt="Embedded QR Code" class="img-responsive" src="data:image/png;base64,@Model" width="300px"/>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-warning">REGRESAR</a>
+</div>

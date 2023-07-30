@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U90aGhw02/BwW3e7agyEBOD0lBf2tzU4/nnVjH/B46w=",
+  "Hash": "q1v49JvzzlA4TwAwIEx/1c/LBnMK42OenWBPmbpCKG4=",
   "Source": "CITI-Oruro",
   "BasePath": "_content/CITI-Oruro",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\imagenes\\SIB.jpg",
+      "SourceId": "CITI-Oruro",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\",
+      "BasePath": "_content/CITI-Oruro",
+      "RelativePath": "imagenes/SIB.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\SIB.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\wwwroot\\imagenes\\siboruro.jpg",
