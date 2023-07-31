@@ -64,7 +64,7 @@ namespace CITI_Oruro.Controllers
         {
             if (ModelState.IsValid)
             {
-                var ingeniero = _context.DetalleInscripcions.Where(x => x.IdIngeniero == detalleInscripcion.IdIngeniero && x.Fecha.Year == DateTime.Now.Year);
+                var ingeniero = _context.DetalleInscripcions.Where(x => x.IdIngeniero == detalleInscripcion.IdIngeniero && x.Fecha.Year == detalleInscripcion.Fecha.Year);
                 if (ingeniero.IsNullOrEmpty()) {
                     if (detalleInscripcion.IdInscripcion == 1)
                         detalleInscripcion.Total = 50;

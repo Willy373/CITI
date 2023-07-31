@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj",
         "projectName": "CITI-Oruro",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\\CITI-Oruro\\CITI-Oruro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

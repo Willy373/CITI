@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pQVfXdPkY7OPe9qC9eDvG2ubiXw5lexAlgGwkF1PDFgAHlOM745YDSKhk384F8ZsdL+6UpwZJp0WcMMnr1OMig==",
+  "dgSpecHash": "kS3fsLYofyBW3n2yXPZvcNKOKgyuVuHYZalt3Dov7EyNiN12KUkX06HV6ClsLSU/fwx8ZGUqIEmm9fwUtB79hQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\\CITI-Oruro\\CITI-Oruro\\CITI-Oruro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

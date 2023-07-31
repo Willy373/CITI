@@ -9,109 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CITI_Oruro
 build_property.RootNamespace = CITI_Oruro
-build_property.ProjectDir = C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\
+build_property.ProjectDir = C:\Users\ASUS\Desktop\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\CITI-Oruro\CITI-Oruro\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro
+build_property.MSBuildProjectDirectory = C:\Users\ASUS\Desktop\SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)\CITI-Oruro\CITI-Oruro
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Create.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Index.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReciboCuota.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReciboCuota.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xSZWNpYm9DdW90YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReporteAlDia.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReporteAlDia.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xSZXBvcnRlQWxEaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReporteDeudores.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/ReporteDeudores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xSZXBvcnRlRGV1ZG9yZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/Reportes.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/Reportes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xSZXBvcnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Cuotums/VerQR.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Cuotums/VerQR.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VvdHVtc1xWZXJRUi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Create.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Delete.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Index.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/ReciboInscripcion.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/ReciboInscripcion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xSZWNpYm9JbnNjcmlwY2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/VerQR.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/DetalleInscripcions/VerQR.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUluc2NyaXBjaW9uc1xWZXJRUi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Home/Index.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Home/Privacy.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Create.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Delete.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Details.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Edit.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Index.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Ingenieroes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Shared/Error.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Usuarios/Login.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Usuarios/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/_ViewImports.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/_ViewStart.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/CITI-Oruro/CITI-Oruro/Views/Shared/_Layout.cshtml]
+[C:/Users/ASUS/Desktop/SIS 2420 - Actualización Tecnológica (Examen Práctico - 2023)/CITI-Oruro/CITI-Oruro/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4qfhajxwnf
