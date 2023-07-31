@@ -273,3 +273,5 @@ C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\bin\Debug\net6.0\Newtonsoft.Json.Bso
 C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\bin\Debug\net6.0\Rotativa.AspNetCore.dll
 C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\obj\Debug\net6.0\CITI-Oruro.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\bin\Debug\net6.0\QRCoder.dll
+C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\ASUS\Desktop\CITI-Oruro\CITI-Oruro\bin\Debug\net6.0\itextsharp.dll
